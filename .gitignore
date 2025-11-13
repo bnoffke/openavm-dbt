@@ -1,0 +1,27 @@
+# dbt
+target/
+dbt_packages/
+logs/
+*.duckdb
+*.duckdb.wal
+
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (optional - uncomment to exclude data files)
+# data/raw/*
+# !data/raw/.gitkeep
+
+# Outputs (optional - uncomment to exclude outputs)
+# output/parquet/*.parquet
+
+# Secrets
+.env
+profiles.yml
+!profiles.yml.example

@@ -1,0 +1,16 @@
+# Copy this to ~/.dbt/profiles.yml
+
+my_project:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: data/my_database.duckdb
+      
+      # Spatial extension installed automatically
+      extensions:
+        - spatial
+      
+      settings:
+        threads: 4
+        memory_limit: '4GB'
